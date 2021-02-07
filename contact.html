@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="grafic.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+<h1>Contact</h1>
+
+<ul>
+
+  <li><a href="index.html">Home</a></li>
+  <li><a href="proteintozu.html">Protein Powder</a></li>
+  <li><a href="aminoasit.html">Amino Acid</a></li>
+  <li><a href="L-Karnitin.html">L-Carnitine</a></li>
+  <li><a href="Performans Ve Guc.html">Power And Performance</a></li>
+  <li><a href="kreatin.html">Creatine</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="filtertext2.html">Fılter</a></li>
+  <li><a href="slide.html">Slide</a></li>
+    
+   
+</ul>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/photo/saas.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Ahmet Payaslioglu</h2>
+        <p class="title">President</p>
+        <p>President of FitnessClup.</p>
+        <p><a href="mailto:ahmetpayasliogluu@gmail.com">ahmetpayasliogluu@gmail.com</a></p>
+        <p>Telephone is: <a href="https://api.whatsapp.com/send?phone=3869619895">+386 961 9895</a> </p>
+        <p><a href="mailto:ahmetpayasliogluu@gmail.com"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/photo/JonSnow.png" alt="Jane" style="width:100%" height="490">
+        <div class="container">
+          <h2>Jon Snow</h2>
+          <p class="title">Security</p>
+          <p>Security of FitnessClup.</p>
+          <p><a href="mailto:johnsnow@gmail.com">johnsnowt@gmail.com</a></p>
+          <p>Telephone is: <a href="https://api.whatsapp.com/send?phone=3869619895">+386 678 2572</a> </p>
+          <p><a href="mailto:johnsnow@gmail.com"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/photo/matrix.jpg" alt="Jane" style="width:100%" height="490">
+          <div class="container">
+            <h2>Matrix</h2>
+            <p class="title">Marketing Expert</p>
+            <p>Marketing Expert of FitnessClup.</p>
+            <p><a href="mailto:matrix@gmail.com">matrix@gmail.com</a></p>
+            <p>Telephone is: <a href="https://api.whatsapp.com/send?phone=3869619895">+386 123 4556</a> </p>
+            <p><a href="mailto:matrix@gmail.com"><button class="button">Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+
+
+  
+  
+  
+
+</body>
+</html>

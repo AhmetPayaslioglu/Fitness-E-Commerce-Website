@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+        <link rel="stylesheet" href="grafic.css">
+        <link rel="stylesheet" href="sil.css">
+    </head>
+<style>
+    
+    
+    
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(0, 255, 34);
+  
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f10000;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: rgb(30, 255, 0);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<ul>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="proteintozu.html">Protein Powder</a></li>
+    <li><a href="aminoasit.html">Amino Acid</a></li>
+    <li><a href="L-Karnitin.html">L-Carnitine</a></li>
+    <li><a href="Performans Ve Guc.html">Power And Performance</a></li>
+    <li><a href="kreatin.html">Creatine</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="filtertext2.html">Fılter</a></li>
+    <li><a href="slide.html">Slide</a></li>
+</ul>
+<body>
+
+<h2 style="text-align:center">PRODUCTS</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <div><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/supplementlercom_whey_protein_2000_gr_17228.jpeg" style="width:30%"></div>
+   
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <div><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_bcaaglutamine_xpress_600_gr_12341.jpeg" style="width:30%"></div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <div><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/hardline_nox_2_1090_gr_39329.jpeg"  style="width:30%"></div>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <div><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_creatine_monohydrate_500_gr_11325.jpeg" style="width:30%"></div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <div><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/natures_supreme_tonalin_cla_1250_mg_120_yumuak_kapsl_13380.jpeg" style="width:30%"></div>
+  </div>
+    
+  
+    
+  <a class="prev"  onclick="plusSlides(-1)"></a>❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/supplementlercom_whey_protein_2000_gr_17228.jpeg" style="width:50%" onclick="currentSlide(1)" alt="Protein Powder">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_bcaaglutamine_xpress_600_gr_12341.jpeg" style="width:50%" onclick="currentSlide(2)" alt="Amino Acid">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/hardline_nox_2_1090_gr_39329.jpeg" style="width:50%" onclick="currentSlide(3)" alt="Power And Performance">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_creatine_monohydrate_500_gr_11325.jpeg" style="width:50%" onclick="currentSlide(4)" alt="Creatin">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/natures_supreme_tonalin_cla_1250_mg_120_yumuak_kapsl_13380.jpeg" style="width:50%" onclick="currentSlide(5)" alt="L-Carnitine">
+    </div>    
+    
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="grafic.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("/photo/pexels-li-sun-2294361.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 50%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+    <ul>
+    
+        <li><a href="index.html">Home</a></li>
+        <li><a href="proteintozu.html">Protein Powder</a></li>
+        <li><a href="aminoasit.html">Amino Acid</a></li>
+        <li><a href="L-Karnitin.html">L-Carnitine</a></li>
+        <li><a href="Performans Ve Guc.html">Power And Performance</a></li>
+        <li><a href="kreatin.html">Creatine</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="filtertext2.html">Fılter</a></li>
+        <li><a href="slide.html">Slide</a></li>
+    
+    </ul>
+<h2>Login Page</h2>
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h1>Account</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    
+    <button onclick="myFunction()" class="btn">Try it</button>
+
+<script>
+function myFunction() {
+  alert("We have to set Database. That service will release soon!");
+}
+</script>
+
+  </form>
+</div>
+
+<p>.</p>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="grafic.css">
+    </head>
+ 
+  
+<style>
+.filterDiv {
+  float: left;
+  background-color: #e9e3e3;
+  color: #fffafa;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 25px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: 0px;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: rgb(243, 243, 243);
+}
+</style>
+
+<body>
+
+    <h1>Fitness Suplements</h1>
+    <ul>
+        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="proteintozu.html">Protein Powder</a></li>
+        <li><a href="aminoasit.html">Amino Acid</a></li>
+        <li><a href="L-Karnitin.html">L-Carnitine</a></li>
+        <li><a href="Performans Ve Guc.html">Power And Performance</a></li>
+        <li><a href="kreatin.html">Creatine</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="filtertext2.html">Fılter</a></li>
+        <li><a href="slide.html">Slide</a></li>
+    
+    </ul>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Protein')"> ProteinPowder</button>
+  <button class="btn" onclick="filterSelection('AminoAcid')"> AminoAcid</button>
+  <button class="btn" onclick="filterSelection('Creatin')"> Creatin</button>
+  <button class="btn" onclick="filterSelection('L-Carnitine')"> L-Carnitine</button>
+  <button class="btn" onclick="filterSelection('Power And Performance')"> Power And Performance</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/supplementlercom_whey_protein_2000_gr_17228.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_bcaaglutamine_xpress_600_gr_12341.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_creatine_monohydrate_500_gr_11325.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/natures_supreme_tonalin_cla_1250_mg_120_yumuak_kapsl_13380.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/hardline_nox_2_1090_gr_39329.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/hardline_whey_3_matrix_908_gr_39309.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/supplementlercom_bcaa_211_480_gr_17225.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/supplementlercom_micronized_creatine_500_gr_18963.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/hardline_thermo_l_karnitin_sv_1000_ml_39333.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/kingsize_nutrition_citrulline_malate_powder_500_gr_42701.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/multipower_100_pure_whey_protein_2000_gr_13225.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/hardline_bcaa_fusion_500_gr_39343.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/weider_pure_creatine_600_gr_11514.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_thermonator_l_carnitine_1000_ml_38131.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/natures_supreme_caffeine_200_mg_100_kapsul_14714.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/multipower_100_whey_isolate_protein_2000_gr_13234.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/muscletech_amino_build_next_gen_ripped_296_gr_27086.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/hardline_kreatin_100_mikronize_300_gr_14580.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/supplementlercom_l_carnitine_shot_3000_mg_12_ampul_27242.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/grenade_50_calibre_pre_workout_50_servis_7263.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/olimp_whey_protein_dragon_ball_z_edition_2270_gr_32300.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/kingsize_nutrition_arginine_powder_750_gr_41905.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_crea_big_micronized_creatine_powder_300_gr_16357.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/hardline_l_karnitin_matrix_3000_mg_20_ampul_14598.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_pre_dator_510_gr_14124.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_whey_isolate_700_gr_20231.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/muscletech_essential_series_platinum_100_ultra_pure_micronized_glutamine_302_gr_7210.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/nutrend_creatine_monohydrate_creapure_500_gr_11101.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/supplementlercom_l_carnitine_shot_3000_mg_1_ampl_41307.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_pow3rd_20_pre_workout_350_gr_14319.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/reflex_native_whey_protein_1800_gr_20463.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/reflex_native_whey_protein_1800_gr_20463.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/kingsize_nutrition_creatine_powder_1000_gr_41908.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/grenade_thermo_detonator_100_kapsl_10659.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/natures_supreme_tribulus_terrestris_90_kapsl_19884.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_big_whey_classic_whey_protein_2376_gr_29218.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_l_glutamine_powder_600_gr_7190.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/reflex_creapure_creatine_250_gr_38873.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/zero_shot_sambucus_2000_mg_l_carnitine_960_ml_20439.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/weider_nosx10_908_gr_12891.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/olimp_r_weiler_shot_20_ampul_22206.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_bcaa_xpress_500_gr_13023.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/olimp_creatine_monohydrate_powder_super_micronized_250_gr_9930.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/hardline_mct_oil_500_ml_14125.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/olimp_tribusteron_90_120_kapsl_11094.png" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/olimp_pure_whey_protein_isolate_1800_gr_29697.jpeg"" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/olimp_bcaa_xplode_500_gr_7563.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_crea_big_micronized_creatine_powder_120_gr_14619.png" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/olimp_l_carnitine_3000_shot_20_ampul_9151.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/hardline_beta_alanine_300_gr_11713.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/nutrend_micellar_casein_2250_gr_11051.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/weider_pure_egg_amino_300_tablet_15227.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_creamix_7000_350_gr_18363.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/zero_shot_l_carnitine_thermo_burn_960_ml_18333.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/sis_go_hydro_20_tablet_23421.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/supplementlercom_whey_protein_500_gr_22598.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/scitec_amino_5600_200_tablet_8285.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_big2_creatine_glutamine_505_gr_25245.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_thermonator_ripped_120_kapsul_16284.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_citrulline_powder_300_gr_13740.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/weider_premium_whey_isolate_2300_gr_26488.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/multipower_whey_amino_3400_300_tablet_20368.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/esn_pure_creatine_monohytrate_500_gr_35188.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/zero_shot_thermo_energy_l_carnitine_250_ml_x_24_adet_19745.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_caffeine_plus_100_kapsul_19460.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+  <div class="filterDiv Protein"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/esn_tasty_whey_protein_2500_gr_42997.jpeg" style="width:100%"></div>
+  <div class="filterDiv AminoAcid"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/big_joy_bcaabig_589_gr_13264.jpeg" style="width:100%"></div>
+  <div class="filterDiv Creatin"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/grenade_creatine_100_pure_creatine_monohydrate_500_gr_20858.jpeg" style="width:100%"></div>
+  <div class="filterDiv L-Carnitine"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/nutrend_thermo_compressed_caps_60_kapsul_11668.jpeg" alt="L-Carnitine" style="width:100%"></div>
+  <div class="filterDiv Power And Performance"><img src="https://supplementler.mncdn.com/Assets/Supplementler/Thumbs/vitargo_electrolyte_2000_gr_9375.jpeg" alt="PowerandPerformance" style="width:100%"></div>
+
+
+
+
+
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
