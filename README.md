@@ -1,5 +1,5 @@
 # Fitness-e-commercial-website
-I created basic Fitness e-commercial website. I finished Frontend step. İf you want to use my project to public website , you should write to Backend code to insert information to database.
+I created a basic Fitness e-commercial website. I finished the Frontend step. If you want to use my project on the public website, you have to write Backend code to insert information into the database.
 ## Video
 Click to see full video in YOUTUBE !
 
